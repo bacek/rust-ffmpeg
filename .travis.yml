@@ -5,11 +5,17 @@ rust:
   - beta
   - nightly
 
+cache: cargo
+
+before_cache:
+  - rm -rf "$TRAVIS_HOME/.cargo/registry/src"
+
 addons:
   apt:
     packages:
       - yasm
       - zlib1g-dev
+      - pkg-config
 
 script:
   - travis_wait cargo test --verbose --features build
