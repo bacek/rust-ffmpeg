@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
       - yasm
+      - zlib1g-dev
 
 script:
   - travis_wait cargo test --verbose --features build
