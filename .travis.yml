@@ -13,6 +13,7 @@ before_cache:
 addons:
   apt:
     packages:
+      - yasm
       - autoconf
       - automake
       - build-essential
