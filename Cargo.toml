@@ -1,6 +1,6 @@
 [package]
 name    = "ffmpeg4"
-version = "0.4.0"
+version = "0.4.3"
 build   = "build.rs"
 
 authors = [
@@ -97,7 +97,7 @@ version  = "0.22"
 optional = true
 
 [dependencies.ffmpeg4-sys]
-version = "4.2"
-default-features = false
-# Temporary change it
+version = "4.3"
 git = "https://github.com/bacek/rust-ffmpeg4-sys"
+branch = "release/4.3"
+default-features = false
