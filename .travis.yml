@@ -33,3 +33,4 @@ before_install:
 
 script: |
     travis_wait cargo build --verbose --features "build"
+    travis_wait cargo build --examples --verbose --features="build"
